@@ -736,8 +736,8 @@ def characterMenuFn( ):
     if k [K_UP]:
         characterMenu -= 1
 
-    if characterMenu >12:
-        characterMenu =12
+    if characterMenu >9:
+        characterMenu =9
     if characterMenu <0:
         characterMenu = 0
 
@@ -785,11 +785,7 @@ def rectAroundMenu( ):
     else:
         Dhalsim = False
 
-    if characterMenu >= 10 and characterMenu <=12:
-        Back = True
-        draw.rect(screen, YELLOW, (440, 395, 120 ,60),5)
-    else:
-        Back = False
+
 
 def checkingCharacter( ):
     global charecterMenu
